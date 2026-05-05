@@ -7,10 +7,17 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Build output
 node_modules
 dist
 dist-ssr
 *.local
+.vite/
+*.tsbuildinfo
+
+# Test output
+coverage/
+.nyc_output/
 
 # Editor directories and files
 .vscode/*
@@ -23,7 +30,15 @@ dist-ssr
 *.sln
 *.sw?
 
+# Env files
+.env
+.env.local
+.env.*.local
+
+# Supabase
+supabase/.branches
+supabase/.temp
+
 # Dependencies
 package-lock.json
 package.json
-.env
