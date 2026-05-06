@@ -1,4 +1,5 @@
 import Hero, { HeroNav } from "@/components/landing/Hero";
+import Countdown from "@/components/landing/Countdown";
 import About from "@/components/landing/About";
 import FAQ from "@/components/landing/FAQ";
 import OpenPositions from "@/components/landing/OpenPositions";
@@ -11,6 +12,7 @@ const Index = () => {
       <main>
         <Hero />
         <HeroNav />
+        <Countdown />
         <About />
         <ApplyForm />
         <OpenPositions />
