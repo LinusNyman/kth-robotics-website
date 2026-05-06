@@ -22,17 +22,13 @@ export default function OpenPositions() {
   return (
     <section id="positions" className="relative py-20 sm:py-28 scroll-mt-24">
       <div className="container max-w-5xl">
-        <div className="mb-10">
+        <div className="mb-10 text-center">
           <span className="font-mono text-xs tracking-[0.3em] uppercase text-primary">
-            Open Roles
+            Specific Roles
           </span>
-          <h2 className="mt-3 text-3xl sm:text-4xl font-extrabold">
+          <h2 className="mt-4 text-4xl sm:text-5xl font-extrabold">
             Open Positions
           </h2>
-          <p className="mt-4 text-muted-foreground max-w-2xl">
-            Specific roles we're recruiting for right now. Don't see a fit?
-            Submit a general application below.
-          </p>
         </div>
 
         {isLoading ? (

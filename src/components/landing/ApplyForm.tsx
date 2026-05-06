@@ -264,18 +264,19 @@ export default function ApplyForm() {
   return (
     <section id="join" className="relative py-20 sm:py-28 scroll-mt-24">
       <div className="container max-w-3xl">
-        <div className="mb-10">
+        <div className="mb-10 text-center">
           <span className="font-mono text-xs tracking-[0.3em] uppercase text-primary">
             Join
           </span>
-          <h2 className="mt-3 text-3xl sm:text-4xl font-extrabold">
+          <h2 className="mt-4 text-4xl sm:text-5xl font-extrabold">
             Apply to KTH Robotics
           </h2>
-          <p className="mt-4 text-muted-foreground">
-            We're organised around <strong>Operations</strong> (partnerships,
-            events, marketing, finance, design), <strong>Development</strong>{" "}
-            (technical R&D), and a <strong>Board</strong> driving strategy.
-            Pick where you fit — or send a general application.
+          <p className="mt-4 text-lg text-muted-foreground leading-relaxed text-justify">
+            Help shape KTH Robotics from day one. Pick where you fit:{" "}
+            <strong>Operations</strong> (media, branding, events, partnerships, facilities),{" "}
+            <strong>Development</strong> (robotics, ML/CV, mechanical, electrical, software),
+            or <strong>Board</strong> (Chair, Vice Chair and society leadership). You can also
+            send a general application.
           </p>
         </div>
 

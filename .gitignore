@@ -42,3 +42,8 @@ supabase/.temp
 # Dependencies
 package-lock.json
 % package.json
+
+# Claude
+.CLAUDE
+CLAUDE.md
+docs/

@@ -1,4 +1,5 @@
 import { lazy, Suspense } from "react";
+import { GENERAL_MEETING_DATE_DISPLAY } from "@/lib/site-config";
 
 const HeroFlow = lazy(() => import("@/components/HeroFlow"));
 
@@ -41,7 +42,7 @@ export default function Hero() {
           className="mt-2 font-mono text-[10px] sm:text-xs tracking-[0.4em] uppercase text-black animate-fade-in"
           style={{ animationDelay: "100ms" }}
         >
-          Stockholm · Est. 2026
+          Stockholm · Founding {GENERAL_MEETING_DATE_DISPLAY}
         </p>
       </div>
     </section>

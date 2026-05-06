@@ -1,20 +1,21 @@
 import { Cpu, Trophy, Users } from "lucide-react";
+import { GENERAL_MEETING_DATE_DISPLAY } from "@/lib/site-config";
 
 const pillars = [
   {
     icon: Cpu,
     title: "Build",
-    body: "Hands-on projects across mechanical, electrical and software domains — from autonomous rovers to robotic arms.",
+    body: "Build real robots — robot arms, drones, autonomous platforms — bringing together mechanical, electrical and software work. Hands-on engineering, end-to-end, with applied machine learning at the core.",
   },
   {
     icon: Trophy,
     title: "Compete",
-    body: "Aim to represent KTH at student robotics competitions across Europe as the society grows. Train, iterate and ship together.",
+    body: "Represent KTH at student robotics competitions across Europe. Train, iterate and ship together — and put KTH on the leaderboard.",
   },
   {
     icon: Users,
     title: "Connect",
-    body: "Build a community of curious engineers, and grow ties with industry partners, alumni and research labs across Stockholm.",
+    body: "Build a network — industry partners, alumni and research labs across Stockholm — and work toward a permanent lab home for hands-on robotics at KTH.",
   },
 ];
 
@@ -30,11 +31,12 @@ export default function About() {
             A society for people who{" "}
             <span className="text-gradient-red">make things move</span>.
           </h2>
-          <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-            KTH Robotics Society is a brand-new student association at KTH Royal Institute of Technology
-            in Stockholm. We're a community of curious engineers — across mechatronics, computer science,
-            electrical, mechanical and beyond — coming together to build real robots, learn by doing,
-            and push what students can ship.
+          <p className="mt-6 text-lg text-muted-foreground leading-relaxed text-justify">
+            KTH Robotics is an upcoming student association at KTH Royal Institute of Technology in
+            Stockholm — to be formally established on <strong>{GENERAL_MEETING_DATE_DISPLAY}</strong>. A community of
+            curious engineers — across mechatronics, computer science, electrical, mechanical and
+            beyond — coming together to build real robots, learn by doing, and push what students
+            can ship.
           </p>
         </div>
 
@@ -42,16 +44,18 @@ export default function About() {
           {pillars.map((p, i) => (
             <div
               key={p.title}
-              className="group relative rounded-md border border-border bg-card p-7 transition-all duration-300 hover:border-primary/60 hover:-translate-y-1"
+              className="group relative flex flex-col rounded-md border border-border bg-card p-7 transition-all duration-300 hover:border-primary/60 hover:-translate-y-1"
               style={{ animationDelay: `${i * 100}ms` }}
             >
               <div className="absolute inset-x-0 -top-px h-px bg-gradient-to-r from-transparent via-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-              <div className="inline-flex h-11 w-11 items-center justify-center rounded-sm bg-primary/10 text-primary border border-primary/30">
-                <p.icon className="h-5 w-5" />
+              <div className="flex items-center gap-4">
+                <div className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-sm bg-primary/10 text-primary border border-primary/30">
+                  <p.icon className="h-5 w-5" />
+                </div>
+                <h3 className="text-xl font-semibold">{p.title}</h3>
               </div>
-              <h3 className="mt-5 text-xl font-semibold">{p.title}</h3>
-              <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{p.body}</p>
-              <span className="mt-6 block font-mono text-[10px] tracking-widest text-muted-foreground/60">
+              <p className="mt-4 text-sm text-muted-foreground leading-relaxed">{p.body}</p>
+              <span className="mt-auto pt-6 font-mono text-[10px] tracking-widest text-muted-foreground/60">
                 0{i + 1} / 03
               </span>
             </div>
