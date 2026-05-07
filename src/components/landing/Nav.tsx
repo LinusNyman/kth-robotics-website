@@ -25,14 +25,14 @@ export default function Nav() {
           : "bg-transparent"
       }`}
     >
-      <nav className="container flex h-16 items-center justify-between">
+      <nav className="container relative flex h-16 items-center justify-between">
         <a href="#top" className="flex items-center gap-2 group">
           <span className="h-2.5 w-2.5 rounded-sm bg-primary shadow-glow group-hover:animate-pulse-glow" />
           <span className="font-mono text-sm tracking-widest uppercase">
             KTH <span className="text-primary">Robotics</span>
           </span>
         </a>
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-8 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
           {links.map((l) => (
             <a
               key={l.href}
