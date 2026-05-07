@@ -13,7 +13,7 @@ export default function Hero() {
   return (
     <section
       id="top"
-      className="relative w-full overflow-hidden h-[42vh] min-h-[340px] isolate"
+      className="relative w-full overflow-hidden h-[60vh] min-h-[480px] isolate"
     >
       {/* Soft radial backdrop */}
       <div
@@ -31,8 +31,6 @@ export default function Hero() {
           </Suspense>
         </div>
       </div>
-
-      
 
       <div className="pointer-events-none relative z-10 flex h-full flex-col items-center justify-center text-center px-6">
         <h1 className="uppercase text-4xl sm:text-5xl md:text-6xl font-extrabold text-white animate-fade-in">
